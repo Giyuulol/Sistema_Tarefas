@@ -49,9 +49,9 @@ Antes de executar o projeto, certifique-se de que você tem o seguinte instalado
 3.  Configure as credenciais de acesso ao banco de dados na classe `DatabaseConnector.java` (localizada em `com.sistemarefas.database.DatabaseConnector`):
     ```java
     // Exemplo dentro de DatabaseConnector.java
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/sistemarefasdb"; // Altere aqui se o nome do BD for diferente
-    private static final String USER = "seu_usuario_mysql"; // Altere aqui
-    private static final String PASS = "sua_senha_mysql";   // Altere aqui
+    private static final String DB_URL = "";
+    private static final String USER = "";
+    private static final String PASS = "";
     ```
 
 ## 🚀 Como Compilar e Executar
