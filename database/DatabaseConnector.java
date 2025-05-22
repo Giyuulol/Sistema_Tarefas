@@ -5,13 +5,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnector {
-    private static final String DB_HOST = "";
-    private static final String DB_PORT = "";
-    private static final String DB_NAME = "";
-    private static final String DB_USER = "";
+    private static final String DB_HOST = "localhost";
+    private static final String DB_PORT = "3306";
+    private static final String DB_NAME = "sistemarefas";
+    private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "";
 
-    private static final String DB_URL = "jdbc:mysql://" + DB_HOST + ":" + DB_PORT + "/" + DB_NAME + "";
+   private static final String DB_URL = "jdbc:mysql://" + DB_HOST + ":" + DB_PORT + "/" + DB_NAME +
+                                    "?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
 
     public static Connection conectar() throws SQLException {
         Connection conexao = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
